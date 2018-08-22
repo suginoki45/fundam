@@ -11,7 +11,6 @@ branches:
 install:
   - nvm install 8
   - npm install
-  - composer install
 
 env:
   global:
