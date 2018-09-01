@@ -63,7 +63,7 @@ add_action( 'after_setup_theme', 'fundam_content_width', 0 );
  * Enqueue styles.
  */
 function fundam_styles() {
-    wp_enqueue_style( 'fundam-style', get_theme_file_uri() . '/dist/css/style.min.css', array(), fundam_VER );
+    wp_enqueue_style( 'fundam-style', get_theme_file_uri() . '/dist/css/style.min.css', array(),  FUNDAM_VER );
 }
 add_action( 'wp_enqueue_scripts', 'fundam_styles' );
 
@@ -71,7 +71,7 @@ add_action( 'wp_enqueue_scripts', 'fundam_styles' );
  * Enqueue scripts.
  */
 function fundam_scripts() {
-    wp_enqueue_script( 'fundam-scripts', get_theme_file_uri() . '/dist/js/app.min.js', array(), fundam_VER, false );
+    wp_enqueue_script( 'fundam-scripts', get_theme_file_uri() . '/dist/js/app.min.js', array(),  FUNDAM_VER, false );
 }
 add_action( 'wp_enqueue_scripts', 'fundam_scripts' );
 
@@ -80,4 +80,4 @@ add_action( 'wp_enqueue_scripts', 'fundam_scripts' );
  *  Theme definitions
  * -------------------------------------------------------------------------
  */
-define( 'fundam_VER', '1.0.0' );
+define( ' FUNDAM_VER', '1.0.0' );
